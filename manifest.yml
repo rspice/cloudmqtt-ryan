@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: cloudmqtt-ryan
+  host: cloudmqtt-ryan
+  disk_quota: 1024M
+  services:
+  - cloudmqtt-ryan-cloudantNoSQLDB
+  - cloudmqtt-ryan-iotf-service
+  env:
+    NODE_RED_USERNAME: ryan
+    NODE_RED_PASSWORD: ryan
